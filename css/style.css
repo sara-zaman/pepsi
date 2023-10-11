@@ -1,0 +1,137 @@
+/* == common css starts == */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --blue-color: #0062be;
+  --red-color: #e60c2c;
+}
+html {
+  font-family: "Poppins", sans-serif;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  text-decoration: none;
+  list-style: none;
+}
+/* == common css ends == */
+section {
+  min-height: 800px;
+  background-color: var(--blue-color);
+  color: white !important;
+  transition: 0.5s;
+}
+header {
+  padding: 10px 0;
+}
+.logo {
+  width: 90px;
+  transition: 0.5s;
+}
+.logo img {
+  width: 100%;
+}
+.logo:hover {
+  transform: rotate(360deg);
+}
+.cus-nav-item {
+}
+.cus-nav-item a {
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+  font-weight: 600;
+  position: relative;
+  text-transform: capitalize;
+  transition: 0.5s;
+}
+.cus-nav-item a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: 0.5s;
+}
+.cus-nav-item a:hover::before {
+  width: 100%;
+}
+.cus-nav-item a:hover {
+  color: white;
+}
+.navbar {
+  --bs-navbar-color: white;
+  --bs-navbar-hover-color: white;
+}
+main {
+  margin-top: 60px;
+  padding-bottom: 50px;
+}
+.main-row {
+  display: flex;
+  align-items: center;
+}
+.left-part {
+}
+.left-part h1 {
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.left-part h1 span {
+  font-size: 100px;
+}
+.left-part p {
+  font-size: 20px;
+  margin: 40px 0;
+}
+.pepsi-btn {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 3px solid white;
+  transition: 0.5s;
+  margin-top: 20px;
+}
+.pepsi-btn:hover {
+  background-color: transparent;
+  color: white;
+}
+.right-part {
+  display: flex;
+  justify-content: end;
+}
+.option-btn {
+  margin-top: 40px;
+}
+
+.option-btn ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.option-btn ul li i {
+  margin: 0 14px;
+}
+.option-btn ul li i img {
+  width: 45px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.option-btn ul li i img:hover {
+  transform: translateY(-15px);
+}
+.bottle {
+  display: inline-block;
+  transition: 0.5s;
+}
